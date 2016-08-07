@@ -15,6 +15,8 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 # Use basic bootstrap styling for devise
 gem 'devise-bootstrap-views'
+# Use stock_quote gem for stock information
+gem 'stock_quote'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
