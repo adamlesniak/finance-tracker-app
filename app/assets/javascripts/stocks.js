@@ -13,6 +13,15 @@ init_stock_lookup = function() {
     $('#stock-lookup-results').empty();
     $('#stock-lookup-errors').replaceWith('Stock was not found.');
     init_stock_lookup();
+    hide_spinner();
+  })
+  // Show loading messsage
+  .on('ajax:before', function() {
+   show_spinner();
+  })
+  // Hide loading messsage
+  .on('ajax:after', function() {
+   hide_spinner();
   });
   
 };
