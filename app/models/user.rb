@@ -17,6 +17,11 @@ class User < ActiveRecord::Base
     (user_stocks.count < 10)
   end
   
+  def full_name 
+    return "#{first_name} #{last_name}" if (first_name || last_name)
+    "Anonymous"
+  end
+  
   
   def stock_already_added?(ticker_symbol)
     stock = Stock.find_by_ticker(ticker_symbol)
