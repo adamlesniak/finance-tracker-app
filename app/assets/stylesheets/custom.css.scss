@@ -9,3 +9,21 @@
 .left-padding {
   padding-left: 1em;
 }
+
+.logout {
+  padding-left: 0;
+}
+
+.user-name {
+  padding-top: 15px;
+}
+
+.nav.navbar-right li {
+  .btn {
+   color: #FFF;
+   margin-top: 5%;
+  }
+  .btn-danger:hover {
+    background-color: darken(#d9534f, 20%);
+  }
+}
