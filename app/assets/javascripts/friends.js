@@ -2,10 +2,10 @@ var init_friend_lookup;
 
 init_friend_lookup = function() {
   
-  $('#friend-lookup-form')
+  $('#friends-lookup-form')
   // Handle success response
   .on('ajax:success', function(event, data, status) {
-    $('#friend-lookup').replaceWith(data);
+    $('#friends-lookup').replaceWith(data);
     init_friend_lookup();
   })
   // Handle error response
