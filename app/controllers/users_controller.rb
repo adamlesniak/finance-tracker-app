@@ -24,6 +24,11 @@ class UsersController < ApplicationController
   end
   
   
+  def show
+    @user = User.find(params[:id])
+  end
+  
+  
   def add_friend
     @friend = User.find(params[:friend])
     current_user.friendships.build(friend_id: @friend.id)
